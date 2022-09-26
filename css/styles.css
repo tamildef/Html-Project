@@ -163,6 +163,14 @@ a {
     fill: var(--color-primary);
 }
 
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+.icon--white {
+    fill: #fff;
+}
+
 .icon-container {
     background: #f3f9fa;
     width: 64px;
@@ -171,6 +179,10 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+.icon-container--accent {
+    background: var(--color-accent);
 }
 /* Buttons */
 .btn {
@@ -311,4 +323,24 @@ a {
     .grid--1x3 { 
         grid-template-columns:repeat(3, 1fr);
     }
+  }
+
+
+  /* Testmonial */
+  .testmonial {
+    padding: 3rem;
+  }
+
+  .testmonial__image{
+    position: relative;
+  }
+
+  .testmonial__image > img {
+    width: 100%;
+  }
+
+  .testmonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
   }
